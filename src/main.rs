@@ -15,6 +15,7 @@ fn main() -> io::Result<()> {
     match args[1].as_str() {
         "1" => {fun = days::day1::day_1},
         "2" => {fun = days::day2::day_2},
+        "3" => {fun = days::day3::day_3},
         _ => {
             eprintln!("No function defined for the given day number");
             std::process::exit(1); 
