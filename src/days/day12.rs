@@ -80,7 +80,7 @@ fn get_sides(group: &Vec<(i32, i32)>) -> i32{
 
 
 
-fn part_1(mapped: &Vec<Vec<char>>) -> (i32, i32){
+fn solution(mapped: &Vec<Vec<char>>) -> (i32, i32){
 
     let mut groups: Vec<Vec<(i32, i32)>> = Vec::new();
     let mut been_to: Vec<Vec<bool>> = mapped.into_iter().map(|x| x.into_iter().map(|_| false).collect()).collect();
@@ -133,8 +133,8 @@ pub fn day_12() -> io::Result<()> {
         let line = line?;
         mapped.push(line.chars().collect());
     }
-
-    let (n1, n2) = part_1(&mapped);
+    println!("Input size {}", mapped.len());
+    let (n1, n2) = solution(&mapped);
     println!("Part 1 answer: {}", n1);
     println!("Part 2 answer: {}", n2);
 
