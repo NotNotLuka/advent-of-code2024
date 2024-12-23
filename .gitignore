@@ -1,3 +1,6 @@
 /target
 /data
 execute.sh
+flamegraph.svg
+perf.data
+perf.data.old
