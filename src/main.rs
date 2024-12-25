@@ -37,6 +37,7 @@ fn main() -> io::Result<()> {
         "21" => {fun = days::day21::day_21},
         "22" => {fun = days::day22::day_22},
         "23" => {fun = days::day23::day_23},
+        "24" => {fun = days::day24::day_24},
         _ => {
             eprintln!("No function defined for the given day number");
             std::process::exit(1); 
